@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Router Demo</h1>
+        <h1>EXSM 3940 Final Project</h1>
         <nav>
           <ul>
-            <li><Link to="/">Home</Link></li>
+            <li className='links'><Link to="/">Home</Link></li>
             <li><Link to="/datainput">DataInput</Link></li>
             <li><Link to="/datadisplay">DataDisplay</Link></li>
           </ul>
@@ -20,8 +20,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<DataHome />} />
-          <Route path="/info" element={<DataInput />} />
-          <Route path="/info" element={<DataDisplay />} />
+          <Route path="/datainput" element={<DataInput />} />
+          <Route path="/datadisplay" element={<DataDisplay />} />
         </Routes>
       </main>
     </div>
