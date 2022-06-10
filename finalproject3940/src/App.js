@@ -7,6 +7,9 @@ function App() {
       <header className="App-header">
         <h1>Final Project EXSM3940</h1>
       </header>
+
+
+      <footer className='Footer'>© Jean-Marc Delisle</footer>
     </div>
   );
 }
