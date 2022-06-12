@@ -1,8 +1,8 @@
 export const GET_USER = 'GET_USER';
 export const ADD_USER = 'ADD_USER';
 
-export const fetchUser = (users) => async (dispatch) => {
-
+export const fetchUser = () => async (dispatch) => {
+let users = '';
     dispatch({
         type: GET_USER,
         payload: users,

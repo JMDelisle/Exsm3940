@@ -20,7 +20,7 @@ const UserForm = ({ dispatch }) => {
     return (
         <form onSubmit={handleSubmit}>
             <input
-            type="tel"
+            type="text"
             placeholder='Your Name'
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
@@ -28,7 +28,8 @@ const UserForm = ({ dispatch }) => {
             
             <br/>
             <input
-            type="number"
+            type="tel"
+            mode='tel'
             placeholder='Phone Number'
             pattern="^-?[0-9]\d*\.?\d*$"
             value={phoneNumber}
@@ -36,9 +37,8 @@ const UserForm = ({ dispatch }) => {
             }
             />
 
-
-
-            <input type='submit' value='Submit' />
+            <br/>
+            <input className='Button' type='submit' value='Submit' />
         </form>
     )
 }

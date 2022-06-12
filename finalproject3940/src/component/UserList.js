@@ -1,19 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { connect } from 'react-redux';
 import UserDetail from './UserDetail'
 
+import { fetchUser } from "../action/userActions";
 
-const UserList = ({ users }) => {
+const UserList = ({ dispatch, users }) => {
+    useEffect(() => {
+        dispatch(fetchUser());
+    }, [dispatch]);
+
     return users.length ? (
-        <div className="book-list">
+        <div className="user-list">
             <ul>
                 {users.map((user) => {
-                    return <UserDetail user={user.firstName} key={user.id} />;
+                    return <UserDetail user={user} key={user.id} />;
                 })}
             </ul>
         </div>
     ) : (
-        <div className="empty"> No named been used</div>
+        <div className="empty"> No name or phone number been used.</div>
     );
 };
 
