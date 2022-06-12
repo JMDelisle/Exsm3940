@@ -34,9 +34,12 @@ a:hover {
 
 .Footer {
   position: absolute;
-    height: 50px;
+  padding: 10px 20px 0 20px;
+    height: 25px;
     width: 100%;
     bottom: 0px;
+    background-color: #0035a0;
+    color: whitesmoke;
 }
 .App-link {
   color: #61dafb;

@@ -2,9 +2,9 @@ import './App.css';
 import UserForm from './component/UserForm';
 import UserList from './component/UserList';
 import { Routes, Link, Route } from 'react-router-dom';
-import UserDetail from './component/UserDetail';
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">
@@ -21,7 +21,9 @@ function App() {
           <Route path="/datainput" element={<UserForm />} />
           <Route path="/datadisplay" element={<UserList />} />
         </Routes>
+        
       </main> 
+      <footer className='Footer'>© Jean-Marc Delisle</footer>
     </div>
   );
 }
