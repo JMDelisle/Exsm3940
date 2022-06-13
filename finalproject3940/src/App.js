@@ -17,11 +17,14 @@ function App() {
       </header>
       <main className='Main'>
         <div>
+         {/*} <UserForm />
+          <UserList/>*/}
         <Routes>
           <Route index element={<div></div>} />
           <Route path="/datainput" element={<UserForm />} />
           <Route path="/datadisplay" element={<UserList />} />
-        </Routes>        </div>
+        </Routes>        
+        </div>
        </main>
       <footer className='Footer'>© Jean-Marc Delisle</footer>
     </div>

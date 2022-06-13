@@ -31,7 +31,7 @@ const UserForm = ({ dispatch }) => {
             type="tel"
             mode='tel'
             placeholder='Phone Number'
-            pattern="^-?[0-9]\d*\.?\d*$"
+            pattern='^-?[0-9]\d*\.?\d*$'
             value={phoneNumber}
             onChange={(e) => setPhoneNumber(e.target.value)
             }

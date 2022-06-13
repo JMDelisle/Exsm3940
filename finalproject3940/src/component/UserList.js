@@ -13,7 +13,7 @@ const UserList = ({ dispatch, users }) => {
         <div className="user-list">
             <ul>
                 {users.map((user) => {
-                    return <UserDetail user={user} key={user.id} />;
+                    return <li key={user.firstName}><UserDetail  user={user}  /></li>;
                 })}
             </ul>
         </div>

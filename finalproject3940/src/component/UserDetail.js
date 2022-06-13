@@ -5,7 +5,7 @@ const UserDetail = ({ user }) => {
     console.log(user.phoneNumber)
 
     return (
-        <li>
+        
             <div>
                 <table>
                     <thead>
@@ -22,7 +22,7 @@ const UserDetail = ({ user }) => {
                     </tbody>
                 </table>
             </div>
-        </li>
+       
     );
 };
 
