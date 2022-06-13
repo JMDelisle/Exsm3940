@@ -20,7 +20,7 @@ function App() {
         <Routes>
           <Route index element={<div></div>} />
           <Route path="/datainput" element={<UserForm />} />
-          <Route path="/datadisplay" element={<UserList />} exact={true}/>
+          <Route path="/datadisplay" element={<UserList />} />
         </Routes>        </div>
        </main>
       <footer className='Footer'>© Jean-Marc Delisle</footer>
