@@ -1,27 +1,27 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	padding: 0;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+		sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+		monospace;
 }
 
 a {
-  color: white;
+	color: white;
 }
 
 a:hover {
-  color: red;
+	color: red;
 }
 
-.Button{
+.Button {
 	width: 100px;
 	height: 30px;
 	font-size: 12px;
@@ -35,19 +35,42 @@ a:hover {
 	color: rgb(200, 0, 200);
 }
 
+th,
+td {
+	border: 1px solid grey;
+}
+
+th {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+fieldset {
+	margin: 0 auto;
+	width: 100%;
+}
+
+
+table {
+	border-collapse: collapse;
+	border: 3px solid darkslategray;
+	width: 100%;
+	margin: 0 auto;
+}
+
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-header {
-  background-color: #6d3d6d;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: antiquewhite;
+	background-color: #6d3d6d;
+	min-height: 10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: antiquewhite;
 }
 
 footer {
@@ -57,20 +80,22 @@ footer {
 	height: 3em;
 	width: 100vw;
 	background-color: #6d3d6d;
-	color: rgb(255,255,255);
+	color: rgb(255, 255, 255);
 	font-weight: bold;
-  padding: 15px 0 0 0;
+	padding: 15px 0 0 0;
 }
 
-input[type='text'], [type='tel'] {
-  width: 350px;
-  padding: 10px;
-  box-sizing: border-box;
-  margin: 6px 0;
-  background: #3c1f3c;
-  color: #fff;
-  border: 0;
+input[type='text'],
+[type='tel'] {
+	width: 350px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 6px 0;
+	background: #3c1f3c;
+	color: #fff;
+	border: 0;
 }
+
 input [type='submit'] {
 	width: 10em;
 	height: 3em;
@@ -78,7 +103,7 @@ input [type='submit'] {
 	font-weight: bold;
 	border-radius: 10px;
 	background-color: rgb(200, 0, 200);
-	color: rgb(255,255,255);
+	color: rgb(255, 255, 255);
 }
 
 nav ul {
@@ -87,17 +112,20 @@ nav ul {
 	text-align: center;
 	padding: 0;
 }
+
 nav li {
 	list-style-type: none;
 	padding: 0;
 	margin-top: 0.5em;
 }
+
 main ul {
 	display: table;
 	margin: -1em auto 2em auto;
 	text-align: left;
 	padding: 0;
 }
+
 main li {
 	list-style-type: decimal;
 	padding-left: 0.5em;
