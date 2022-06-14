@@ -1,8 +1,6 @@
 import React from 'react';
 
 const UserDetail = ({ user }) => {
-    console.log(user.firstName)
-    console.log(user.phoneNumber)
 
     return (
         

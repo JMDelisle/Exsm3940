@@ -2,25 +2,27 @@ import React from 'react';
 import { createRoot } from "react-dom/client";
 import './index.css';
 import App from './App';
-import { createStore, applyMiddleware, compose } from 'redux';
-import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import { BrowserRouter } from 'react-router-dom';
-import ReduxThunk from 'redux-thunk';
 
 import rootReducer from './reducers'
 
-const middlewares = [ReduxThunk];
-const store = createStore(rootReducer, compose(applyMiddleware(...middlewares)),);
+const store = createStore(rootReducer);
 
 const container = document.getElementById("root");
 const root = createRoot(container);
 
+function renderListener() {
+
+
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Provider store={store}>
-        <App />
-      </Provider>
+        <App reduxStore = {store} />
     </BrowserRouter>
   </React.StrictMode>
 );
+}
+renderListener();
+store.subscribe(renderListener);

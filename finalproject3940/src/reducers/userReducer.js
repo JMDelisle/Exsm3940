@@ -1,24 +1,18 @@
-import { GET_USER, ADD_USER } from '../action/userActions';
+export const initialState = [];
 
-export const initialState = {
-  users: [],
-}
 
 export default function userReducer(state = initialState, action) {
+ // console.log(state)
   switch (action.type) {
-    case GET_USER:
-      return {
+    case 'GET_USER':
+      return state;
+    case 'ADD_USER':
+      return [
         ...state,
-        users: action.payload,
-      };
+        action.payload
+      ];
 
-      case ADD_USER:
-        return {
-          ...state,
-          users: [...state.users, action.payload],
-        };
-        
-        default:
-          return state;
+    default:
+      return state;
   }
 }

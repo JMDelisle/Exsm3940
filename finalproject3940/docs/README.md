@@ -10,3 +10,5 @@ Bugs:
  - Everything is working but now for some reason the Component that is suppose to be displayed isn't getting displayed. Console.log() shows it is retrieving the input. Not sure if thunk is having an issue or what!?!?
  - Put in redux store into tables. 
  - Still having issue where "UserList" won't display.
+ - James assisted on the proper way of handling the codes.
+ - Need to have forms done up.

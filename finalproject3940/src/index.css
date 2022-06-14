@@ -43,6 +43,8 @@ td {
 th {
 	text-decoration: underline;
 	font-weight: bold;
+	text-align: center;
+	width: 150px;
 }
 
 fieldset {

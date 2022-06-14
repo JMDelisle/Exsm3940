@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import { connect } from 'react-redux';
-import { addUser } from '../action/userActions';
 
-const UserForm = ({ dispatch }) => {
+const UserForm = () => {
     const [firstName, setFirstName] = useState('');
     const [phoneNumber, setPhoneNumber] = useState('');
 
@@ -12,10 +10,10 @@ const UserForm = ({ dispatch }) => {
             firstName,
             phoneNumber,
         };
-        dispatch(addUser(newUser));
         setFirstName('');
         setPhoneNumber('');
     };
+
 
     return (
         <form onSubmit={handleSubmit}>
@@ -38,9 +36,10 @@ const UserForm = ({ dispatch }) => {
             />
 
             <br/>
+            
             <input className='Button' type='submit' value='Submit' />
         </form>
     )
 }
 
-export default connect(null)(UserForm)
+export default UserForm;

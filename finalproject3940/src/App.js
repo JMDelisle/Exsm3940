@@ -2,7 +2,7 @@ import UserForm from './component/UserForm';
 import UserList from './component/UserList';
 import { Routes, Link, Route } from 'react-router-dom';
 
-function App() {
+function App(prop) {
 
   return (
     <div className="App">
@@ -17,12 +17,10 @@ function App() {
       </header>
       <main className='Main'>
         <div>
-         {/*} <UserForm />
-          <UserList/>*/}
         <Routes>
           <Route index element={<div></div>} />
-          <Route path="/datainput" element={<UserForm />} />
-          <Route path="/datadisplay" element={<UserList />} />
+          <Route path="/datainput" element={<UserForm  />} />
+          <Route path="/datadisplay" element={<UserList data={prop.reduxStore.getState()}/>} />
         </Routes>        
         </div>
        </main>
@@ -30,5 +28,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
