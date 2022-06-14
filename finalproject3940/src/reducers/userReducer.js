@@ -2,7 +2,7 @@ export const initialState = [];
 
 
 export default function userReducer(state = initialState, action) {
- // console.log(state)
+ //console.log(action);
   switch (action.type) {
     case 'GET_USER':
       return state;
